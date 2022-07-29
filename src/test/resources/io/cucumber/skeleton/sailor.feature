@@ -29,15 +29,3 @@ Feature: Stranded without wind, drifting and killing time.
         | Sam Bellamy's                          | Whydah Gally         |
     When Alicia and Jonny asked who they where
     Then they said: "We are the true pirates!"
-
-
-
-
-
-
-
-
-
-
-
-

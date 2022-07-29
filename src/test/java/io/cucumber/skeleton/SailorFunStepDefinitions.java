@@ -12,8 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SailorFunStepDefinitions {
-
-    BottomOfSea bottomOfSea;
+    
     Sailor sailor;
 
     @Given("{sailor} is reading a book in the shade")
@@ -44,7 +43,6 @@ public class SailorFunStepDefinitions {
         assertEquals(SailorState.TERRIFIED, sailor.getSailorState());
     }
 
-
     @Given("{sailor}, is still navigating even without sail or engines and with a hole in the hull.")
     public void aliciaIsStillNavigating(Sailor sailor) {
         this.sailor = sailor;
@@ -55,8 +53,6 @@ public class SailorFunStepDefinitions {
     public void sheIsAGhost() {
         assertEquals(SailorState.GHOST, sailor.getSailorState());
     }
-
-
 
     public static class PirateAndShip {
 
