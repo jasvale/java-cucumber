@@ -21,6 +21,14 @@ Feature: Stranded without wind, drifting and killing time.
     Given Alicia, is still navigating even without sail or engines and with a hole in the hull.
     Then she is a ghost.
 
+  Scenario: Sea Ghostly figures met.
+      Given Amidst the bottom of the ocean they found others
+        | name                                   | ship                 |
+        | Edward "Blackbeard" Teach              | Queen Anne's Revenge |
+        | Bartholomew "Black Bart" Roberts       | Royal Fortune        |
+        | Sam Bellamy's                          | Whydah Gally         |
+    When Alicia and Jonny asked who they where
+    Then they said: "We are the true pirates!"
 
 
 

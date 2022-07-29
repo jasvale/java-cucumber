@@ -9,4 +9,5 @@ public class ParameterTypes {
     public Sailor sailor(String name) {
         return new Sailor(name);
     }
+
 }

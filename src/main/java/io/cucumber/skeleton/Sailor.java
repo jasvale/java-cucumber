@@ -2,7 +2,7 @@ package io.cucumber.skeleton;
 
 public class Sailor {
     private String name;
-    private SailorStateOfMind stateOfMind;
+    private SailorState sailorState;
 
     public Sailor(String name) {
         this.name = name;
@@ -12,16 +12,16 @@ public class Sailor {
         switch (action) {
             case READING_BOOKS:
             case SEEN_SHARK:
-                stateOfMind = SailorStateOfMind.SATISFIED;
+                sailorState = SailorState.SATISFIED;
                 break;
             case SEEN_WHAT_APPEARS_KRAKEN:
-                stateOfMind = SailorStateOfMind.NERVOUS;
+                sailorState = SailorState.NERVOUS;
                 break;
             case CONFIRMED_KRAKEN:
-                stateOfMind = SailorStateOfMind.TERRIFIED;
+                sailorState = SailorState.TERRIFIED;
                 break;
             case DEAD:
-                stateOfMind = SailorStateOfMind.GHOST;
+                sailorState = SailorState.GHOST;
                 break;
         }
     }
@@ -30,7 +30,7 @@ public class Sailor {
         return name;
     }
 
-    public SailorStateOfMind getStateOfMind() {
-        return stateOfMind;
+    public SailorState getSailorState() {
+        return sailorState;
     }
 }

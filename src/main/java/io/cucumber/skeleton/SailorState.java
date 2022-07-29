@@ -1,6 +1,6 @@
 package io.cucumber.skeleton;
 
-public enum SailorStateOfMind {
+public enum SailorState {
     SATISFIED,
     NERVOUS,
     TERRIFIED,
